@@ -1,0 +1,30 @@
+{% extends 'testapp/base.html' %}
+{% load static %}
+{% block manas %}
+
+
+{% comment %} <div class="sidebar">
+    <h1>manas</h1>
+    
+</div> {% endcomment %}
+<div class="container">
+<div class="jumbotron bg-dark">
+    {% comment %} <img src="{% static 'image/book.jpg' %}" class="rounded float-left" alt="...">
+     <img src="{% static 'image/book2.jpg' %}" class="rounded float-right" alt="..."> {% endcomment %}
+    <h1 class="display-4">Welcome To My Library!</h1>
+    <p class="lead">This is my website, “Technology is just a tool. In terms of getting the kids working together and motivating them, the teacher is most important.”</p>
+    <hr class="my-4">
+    <p>“If we teach today as we taught yesterday, we rob our children of tomorrow.” – John Dewey</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg mt-3" href="/book" role="button">Book Details</a>
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+{% endblock manas %}

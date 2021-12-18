@@ -1,0 +1,15 @@
+{% extends 'testapp/base.html' %}
+{% load static %}
+{% block manas %}
+<div class="container">
+<h1>{{book.name|title}}</h1><hr>
+
+<h3>  <li>Book Name  :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{book.name}}</li></h3>
+<h3>  <li>Book Author:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{book.author}}</li></h3>
+<h3>  <li>Book Pages :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{book.pages}}</li></h3>
+<h3>  <li>Book Price :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{book.price}}</li></h3>
+<br><br>
+ <a class="btn btn-outline-success" href="/update/{{book.id}}">Edit</a> &nbsp&nbsp
+    <a class="btn btn-outline-danger" href="/delete/{{book.id}}">Delete</a> 
+</div>
+{% endblock manas %}

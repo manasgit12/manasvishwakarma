@@ -1,0 +1,15 @@
+{% extends 'testapp/base.html' %}
+{% load crispy_forms_tags %}
+{% block manas %}
+<div class="row justify-content-around mt-5">
+<div class="col-sm-4">
+<form  method="post" class="bg-info p-3 rounded shadow">
+    {{form|crispy}}
+    {% csrf_token %}
+    <input type="submit" value="LogIn" class="btn btn-success btn-sm">&nbsp&nbsp
+    <a href="/signup" class="btn btn-primary btn-sm">SignUp</a>
+
+</form>
+</div>
+</div>
+{% endblock manas %}

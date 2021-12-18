@@ -1,9 +1,0 @@
-{% extends 'A1/base.html' %}
- {% block manas %}
- <h1>Insert the employee data</h1>
- <form method="post">
-     {{form.as_p}}
-     {%csrf_token%}
-     <input type="submit" value="Insert">
- </form>
- {% endblock manas %}
